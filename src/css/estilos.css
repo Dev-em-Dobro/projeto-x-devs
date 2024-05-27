@@ -7,10 +7,7 @@ body {
 }
 
 .cabecalho {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+  text-align: center;
   padding-top: 50px;
 }
 
@@ -22,7 +19,7 @@ body {
 
 
 
-.pesonagens-slider {
+.personagens-slider {
   display: flex;
   align-items: center;
   justify-content: center;
