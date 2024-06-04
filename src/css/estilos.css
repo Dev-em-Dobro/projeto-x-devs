@@ -67,26 +67,16 @@ body {
   max-height: 280px;
 }
 
-.cartao .container-imagem {
-  text-align: center;
-}
-
-.cartao .informacoes {
+.cartao .nome {
   background-color: rgba(179, 177, 185, 0.7);
-  
   padding: 8px 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-.cartao .informacoes .nome {
   color: white;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-
-
 
 .cartao .descricao {
   background: rgba(255, 255, 255, 0.8);
@@ -108,9 +98,6 @@ body {
   max-height: 115px;
   overflow-y: auto;
 }
-
-
-
 
 .cartao.selecionado {
   opacity: 1;
