@@ -8,19 +8,20 @@ body {
 
 .cabecalho {
   text-align: center;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
-.cabecalho .titulo {
+.cabecalho h1 {
   color: #f1ecff;
   font-size: 45px;
   letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
 .personagens-slider {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 80px;
 }
 
@@ -31,15 +32,15 @@ body {
 }
 
 .btn-seta {
-  background-color: white;
+  background-color: #ffffff;
   width: 70px;
   height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50px;
   border: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.2s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -53,6 +54,9 @@ body {
 }
 
 .cartao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   opacity: 0;
   height: 100%;
   position: absolute;
@@ -62,9 +66,15 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.cartao img {
+.cartao .imagem-personagem {
   width: 100%;
+  /*todo 0-tentar trocar pra 300px*/
   max-height: 280px;
+}
+
+.cartao.selecionado {
+  opacity: 1;
+  z-index: 1;
 }
 
 .cartao .nome {
@@ -72,7 +82,7 @@ body {
   padding: 8px 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -87,45 +97,39 @@ body {
 .cartao .descricao .titulo {
   background-color: #333333;
   font-size: 20px;
-  color: white;
+  color: #ffffff;
   padding: 12px;
 }
 
 .cartao .descricao .texto {
-  font-size: 15px;
+  font-size: 14px;
   padding: 12px;
   text-align: justify;
-  max-height: 115px;
+
+  max-height: 110px;
   overflow-y: auto;
 }
 
-.cartao.selecionado {
-  opacity: 1;
-  z-index: 1;
-}
-
-.fundo-1 {
+.cartao.fundo-1 {
   background: url(../imagens/fundo-1.jpg) no-repeat;
 }
 
-.fundo-2 {
+.cartao.fundo-2 {
   background: url(../imagens/fundo-2.jpg) no-repeat;
 }
 
-.fundo-3 {
+.cartao.fundo-3 {
   background: url(../imagens/fundo-3.jpg) no-repeat;
 }
 
-.fundo-4 {
+.cartao.fundo-4 {
   background: url(../imagens/fundo-4.jpg) no-repeat;
 }
 
-.fundo-5 {
+.cartao.fundo-5 {
   background: url(../imagens/fundo-5.jpg) no-repeat;
 }
 
-.fundo-6 {
+.cartao.fundo-6 {
   background: url(../imagens/fundo-6.jpg) no-repeat;
 }
-
-
